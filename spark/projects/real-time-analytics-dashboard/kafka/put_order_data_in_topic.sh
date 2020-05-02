@@ -1,10 +1,10 @@
 #!/bin/bash
 
 export PATH=$PATH:/usr/hdp/current/kafka-broker/bin
-FILES=$1/*.csv
+FILES=$1/hamilton_china.csv
 for f in $FILES
 do
     echo "pushing $f file"
     cat $f | kafka-console-producer.sh --broker-list $2  --topic $3
-    sleep 60
+    sleep 1
 done

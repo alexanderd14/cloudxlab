@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export PATH=$PATH:/usr/hdp/current/kafka-broker/bin
-FILES=$1/hamilton_china.csv
+FILES=$1/*.csv
 for f in $FILES
 do
     echo "pushing $f file"

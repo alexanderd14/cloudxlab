@@ -6,5 +6,5 @@ for f in $FILES
 do
     echo "pushing $f file"
     cat $f | kafka-console-producer.sh --broker-list $2  --topic $3
-    sleep 1
+    sleep 30
 done
